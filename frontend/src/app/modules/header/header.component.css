@@ -1,0 +1,21 @@
+.title{
+  color: #28c4fc;
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 32pt;
+}
+.nav{
+  color: #28c4fc;
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 26pt;
+}
+.btn{
+  font-style: oblique;
+  font-size: 20pt;
+  font-weight: 600;
+  color: #28c4fc;
+}
+.d-flex{
+  background: #1b1e21;
+}

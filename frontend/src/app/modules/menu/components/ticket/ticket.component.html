@@ -1,0 +1,91 @@
+<app-header></app-header>
+<main role="main">
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Стоимость абонементов</h1>
+  </div>
+
+  <div class="pricing-header  mx-auto text-center">
+    <h3>ПЕРВОЕ ЗАНЯТИЕ БЕСПЛАТНО!</h3>
+  </div>
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <ng-container *ngFor="let ticket of tickets">
+        <div class="row">
+          <div class="col">
+
+            <div class="card-deck text-center">
+
+              <div class="card mb-4">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">{{ticket.name}}</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">{{ticket.cost}} <small class="text-muted">рублей</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Срок действия: {{ticket.duration}}</li>
+                    <li>{{ticket.visits}}</li>
+                    <li>Посещение без ограничений 24/7</li>
+                    <li>Бесплатная питьевая вода</li>
+                    <li>Бесплатная стоянка возле зала</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h2>Вы можете забронировать себе абонемент</h2>
+    <h3>Оплата при первом посещении</h3>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+            (click)="_openModal(template)">
+      Забронировать абонемент
+    </button>
+  </div>
+  <ng-template #template>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">{{editMode ? "Edit" : ""}}  Забронировать абонемент</h4>
+      <button type="button" class="close pull-right"
+              aria-label="Close" (click)="_closeModal()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>Имя</label>
+        <input class="form-control" name="name" [(ngModel)]="editableBa1.name" #name="ngModel" required/>
+        <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
+          Заполните поле
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Телефон</label>
+        <input class="form-control" name="phone" [(ngModel)]="editableBa1.phone" #phone="ngModel" required/>
+        <div [hidden]="phone.valid || phone.untouched" class="alert alert-danger">
+          Заполните поле
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Абонемент</label>
+        <select class="form-control" id="exampleFormControlSelect1" name="ticket" [(ngModel)]="editableBa1.ticket" #ticket="ngModel" required>
+
+          <option *ngFor="let ticket of tickets">{{ticket.name}}</option>
+        </select>
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" (click)="_addPurchase(name, phone, ticket)"
+              [disabled]="name.invalid || phone.invalid">{{editMode ? "Save" : "Заказать"}}
+      </button>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="_closeModal()">Закрыть</button>
+
+    </div>
+  </ng-template>
+</main>
+<app-footer></app-footer>

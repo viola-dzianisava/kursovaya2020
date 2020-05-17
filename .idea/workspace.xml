@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f77be925-e44e-4d03-8230-59b48afef1fb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL for 5.1 - gym@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL for 5.1 - gym@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL for 5.1 - gym@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="gym: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZJ1AveWhIX5mVc9KcUKWn3IF0U" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="69cb9205-7f23-465a-8b4e-584a7c0b7b41" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="Z:/" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/frontend/node_modules/protractor" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="C:\BubbleGYM\frontend\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="com.gym.backend.entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\borov\OneDrive\Рабочий стол\BubbleGYM\frontend\src\app\modules\admin\components\adminMenu" />
+      <recent name="C:\Users\borov\OneDrive\Рабочий стол\BubbleGYM\frontend\src\app\modules\admin\components\adminPurchase" />
+      <recent name="C:\Users\borov\OneDrive\Рабочий стол\BubbleGYM\frontend\src\app\modules\admin\components\adminTrainer" />
+      <recent name="C:\Users\borov\OneDrive\Рабочий стол\IQuiz\frontend\src\app\modules\menu\components\tranier" />
+      <recent name="C:\Users\borov\OneDrive\Рабочий стол\IQuiz\frontend\src\app\modules\admin\components\adminTicket" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="E2E Tests (etalon-e2e)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/frontend/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/frontend/node_modules/protractor" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application (frontend)" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gym.backend.BackendApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FapiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="fapi" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gym.fapi.FapiApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Angular CLI Server (frontend)" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Angular Application (frontend)" />
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.Angular CLI Server (frontend)" />
+      <item itemvalue="Protractor.E2E Tests (etalon-e2e)" />
+      <item itemvalue="Spring Boot.BackendApplication" />
+      <item itemvalue="Spring Boot.FapiApplication" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f77be925-e44e-4d03-8230-59b48afef1fb" name="Default Changelist" comment="" />
+      <created>1584542242317</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584542242317</updated>
+      <workItem from="1584542246134" duration="5737000" />
+      <workItem from="1584549669713" duration="733000" />
+      <workItem from="1584552024693" duration="42228000" />
+      <workItem from="1584696376290" duration="8600000" />
+      <workItem from="1584706296616" duration="13379000" />
+      <workItem from="1584723083567" duration="320000" />
+      <workItem from="1584728236640" duration="7254000" />
+      <workItem from="1584796645621" duration="8211000" />
+      <workItem from="1584806040556" duration="409000" />
+      <workItem from="1584869674466" duration="284000" />
+      <workItem from="1584877423731" duration="4465000" />
+      <workItem from="1585740175110" duration="1398000" />
+      <workItem from="1588599443269" duration="2940000" />
+      <workItem from="1588775488710" duration="84000" />
+      <workItem from="1588775594714" duration="1518000" />
+      <workItem from="1588931619193" duration="8594000" />
+      <workItem from="1589055601547" duration="190000" />
+      <workItem from="1589055857151" duration="239000" />
+      <workItem from="1589056329164" duration="88000" />
+      <workItem from="1589056514764" duration="1807000" />
+      <workItem from="1589058417996" duration="84000" />
+      <workItem from="1589058584697" duration="2573000" />
+      <workItem from="1589102222400" duration="1708000" />
+      <workItem from="1589636699368" duration="2555000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../ethalon-master/frontend/node_modules/.staging/karma-65e16ac3/config.tpl.js" />
+        <option value="$PROJECT_DIR$/../ethalon-master/frontend/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="88" key="#Assign_Data_Sources" timestamp="1584619179125">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="88" key="#Assign_Data_Sources/0.0.1600.860@0.0.1600.860" timestamp="1584619179125" />
+    <state x="233" y="39" key="#Inspections" timestamp="1589058240954">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="233" y="39" key="#Inspections/0.0.1280.760@0.0.1280.760" timestamp="1589058240954" />
+    <state x="233" y="39" key="#Intentions" timestamp="1589058275889">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="233" y="39" key="#Intentions/0.0.1280.760@0.0.1280.760" timestamp="1589058275889" />
+    <state x="233" y="39" key="#Project_Structure" timestamp="1589026885742">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="233" y="39" key="#Project_Structure/0.0.1280.760@0.0.1280.760" timestamp="1589026885742" />
+    <state x="211" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589056042090">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="211" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.760@0.0.1280.760" timestamp="1589056042090" />
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1584618904709" />
+    <state x="580" y="135" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1584548099839">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="135" key="#com.intellij.ide.macro.MacrosDialog/0.0.1600.860@0.0.1600.860" timestamp="1584548099839" />
+    <state x="605" y="146" key="#com.intellij.ide.util.MemberChooser" timestamp="1584801357590">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="146" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1584801357590" />
+    <state x="529" y="206" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1584732248957">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="529" y="206" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1584732248957" />
+    <state x="529" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584552406050">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="529" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1584552406050" />
+    <state x="470" y="0" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1584732253082">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="470" y="0" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1600.860@0.0.1600.860" timestamp="1584732253082" />
+    <state x="380" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584619370195">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="380" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1584619370195" />
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584800047687">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1584800047687" />
+    <state x="464" y="163" key="FileChooserDialogImpl" timestamp="1588775697567">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="464" y="163" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1588775697567" />
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1584804359748" />
+    <state width="1238" height="229" key="GridCell.Tab.0.bottom" timestamp="1589124003751">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="229" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1589124003751" />
+    <state width="1557" height="165" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584870079093" />
+    <state width="1238" height="229" key="GridCell.Tab.0.center" timestamp="1589124003751">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="229" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1589124003751" />
+    <state width="1557" height="165" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584870079093" />
+    <state width="1238" height="229" key="GridCell.Tab.0.left" timestamp="1589124003751">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="229" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1589124003751" />
+    <state width="1557" height="165" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584870079093" />
+    <state width="1238" height="229" key="GridCell.Tab.0.right" timestamp="1589124003751">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="229" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1589124003751" />
+    <state width="1557" height="165" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584870079093" />
+    <state width="1238" height="229" key="GridCell.Tab.1.bottom" timestamp="1589124003725">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="229" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1589124003725" />
+    <state width="1557" height="165" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584870079093" />
+    <state width="1238" height="229" key="GridCell.Tab.1.center" timestamp="1589124003725">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="229" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1589124003725" />
+    <state width="1557" height="165" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1584870079093" />
+    <state width="1238" height="229" key="GridCell.Tab.1.left" timestamp="1589124003725">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="229" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1589124003725" />
+    <state width="1557" height="165" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1584870079093" />
+    <state width="1238" height="229" key="GridCell.Tab.1.right" timestamp="1589124003725">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="229" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1589124003725" />
+    <state width="1557" height="165" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1584870079093" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1584553884888">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1600.860@0.0.1600.860" timestamp="1584553884888" />
+    <state x="241" y="0" key="SettingsEditor" timestamp="1584877515950">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="241" y="0" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1584877515950" />
+    <state x="301" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1584696868067" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1584639075806">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1600.860@0.0.1600.860" timestamp="1584639075806" />
+    <state x="341" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1585740188045">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="341" y="205" key="com.intellij.ide.util.TipDialog/0.0.1280.760@0.0.1280.760" timestamp="1585740188045" />
+    <state x="456" y="195" key="run.anything.popup" timestamp="1584617495430">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1584617495430" />
+  </component>
+</project>

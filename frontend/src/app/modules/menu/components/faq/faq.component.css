@@ -1,0 +1,22 @@
+.accordion{
+  width: 800pt;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25pt;
+}
+.btn{
+  font-style: oblique;
+  font-size: 20pt;
+  font-weight: 600;
+  color: #28c4fc;
+}
+.card{
+  margin-bottom: 25pt;
+}
+.card-body{
+  font-size: 15pt;
+}
+.card-header{
+  background: #1b1e21;
+}

@@ -1,0 +1,26 @@
+<app-header></app-header>
+<main role="main">
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Наши тренеры</h1>
+  </div>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <ng-container *ngFor="let trainer of trainers">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h1 class="featurette-heading" >{{trainer.name}}</h1>
+          <h2>{{trainer.style}}</h2>
+          <h2>Стаж {{trainer.experience}} лет</h2>
+        </div>
+        <div class="col-md-5">
+          <img src="/src/assets/{{trainer.photo}}.jpg" width="350" height="350" alt="#">
+        </div>
+      </div>
+      </ng-container>
+    </div>
+  </div>
+
+</main>
+<app-footer></app-footer>

@@ -1,0 +1,12 @@
+.list-unstyled{
+  font-size: 15pt;
+}
+.card-header{
+background: #1b1e21;
+  color: #3ac0ff;
+}
+.row{
+  width: 500pt;
+  margin-left: auto;
+  margin-right: auto;
+}

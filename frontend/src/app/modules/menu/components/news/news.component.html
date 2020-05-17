@@ -1,0 +1,30 @@
+<app-header></app-header>
+<main role="main">
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Новости</h1>
+  </div>
+  <ng-container *ngFor="let news of newsis.reverse()" >
+    <div class="container">
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading text-center">{{news.title}}</h2>
+          <p class="lead">{{news.text}}
+          </p>
+      </div>
+        <div class="col-md-5">
+          <img src="/src/assets/{{news.img}}.jpg"  alt="#">
+        </div>
+        <p class="lead">{{news.date}}
+        </p>
+      </div>
+
+      <hr class="featurette-divider">
+
+    </div>
+  </ng-container>
+  </main>
+<app-footer></app-footer>

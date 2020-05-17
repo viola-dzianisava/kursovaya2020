@@ -1,0 +1,91 @@
+<app-header></app-header>
+<h4>Работа с тренерами</h4>
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Имя</th>
+    <th scope="col">Стаж</th>
+    <th scope="col">Направление</th>
+    <th scope="col">Фото</th>
+    <th scope="col">Удалить</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let trainer of trainers">
+    <td scope="row">{{trainer.idTrainer}}</td>
+    <td>{{trainer.name}}</td>
+    <td>{{trainer.experience}}</td>
+    <td>{{trainer.style}}</td>
+    <td>{{trainer.photo}}</td>
+    <td>
+      <button type="button" class="btn btn-danger" (click)="_deleteTrainer(trainer.idTrainer)">Удалить</button>
+    </td>
+  </tr>
+
+  </tbody>
+</table>
+
+<div class="button">
+  <button type="button" class="btn btn-dark" (click)="_updateTrainer()">Обновить</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+          (click)="_openModal(template)">
+    Добавить тренера
+  </button>
+  <button type="button" class="btn btn-success" [routerLink]="['/adminMenu4815162342']">В меню</button>
+</div>
+
+<!-- Modal -->
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{editMode ? "Edit" : ""}}  Добавить тренера</h4>
+    <button type="button" class="close pull-right"
+            aria-label="Close" (click)="_closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="form-group">
+      <label>Имя</label>
+      <input class="form-control" name="name" [(ngModel)]="editableBa.name" #name="ngModel" required/>
+      <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Стаж</label>
+      <input class="form-control" name="experience" [(ngModel)]="editableBa.experience" #experience="ngModel" required/>
+      <div [hidden]="experience.valid || experience.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Направление</label>
+      <select class="form-control" id="exampleFormControlSelect1" name="style" [(ngModel)]="editableBa.style" #style="ngModel" required>
+        <option>Тренер по женскому фитнесу</option>
+        <option>Инструктор тренажёрного зала</option>
+        <option>Тренер групповых программ</option>
+      </select>
+
+      <div [hidden]="style.valid || style.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Фото</label>
+      <input class="form-control" name="photo" [(ngModel)]="editableBa.photo" #photo="ngModel" required/>
+      <div [hidden]="photo.valid || photo.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" (click)="_addTrainer(name, experience, style, photo)"
+            [disabled]="name.invalid || experience.invalid || style.invalid || photo.invalid">{{editMode ? "Save" : "Добавить"}}
+    </button>
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="_closeModal()">Закрыть</button>
+
+  </div>
+</ng-template>
+

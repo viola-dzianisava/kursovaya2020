@@ -1,0 +1,102 @@
+<app-header></app-header>
+<h4>Работа с клиентами</h4>
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Имя</th>
+    <th scope="col">Телефон</th>
+    <th scope="col">Абонемент</th>
+    <th scope="col">Дата начала тренировок</th>
+    <th scope="col">Статус</th>
+    <th scope="col">Изменить</th>
+    <th scope="col">Удалить</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let purchase of purchases">
+    <td scope="row">{{purchase.idPurchase}}</td>
+    <td>{{purchase.name}}</td>
+    <td>{{purchase.phone}}</td>
+    <td>{{purchase.ticket}}</td>
+    <td>{{purchase.start}}</td>
+    <td>{{purchase.status}}</td>
+    <td>
+      <button type="button" class="btn btn-secondary" (click)="_openModal(template, purchase)">Изменить</button>
+    </td>
+    <td>
+      <button type="button" class="btn btn-danger" (click)="_deletePurchase(purchase.idPurchase)">Удалить</button>
+    </td>
+  </tr>
+
+  </tbody>
+</table>
+
+<div class="button">
+  <button type="button" class="btn btn-dark" (click)="_updatePurchase()">Обновить</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+          (click)="_openModal(template)">
+    Добавить клиента
+  </button>
+  <button type="button" class="btn btn-success" [routerLink]="['/adminMenu4815162342']">В меню</button>
+</div>
+
+<!-- Modal -->
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{editMode ? "Edit" : ""}}  Добавить клиента</h4>
+    <button type="button" class="close pull-right"
+            aria-label="Close" (click)="_closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="form-group">
+      <label>Имя</label>
+      <input class="form-control" name="name" [(ngModel)]="editableBa.name" #name="ngModel" required/>
+      <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Телефон</label>
+      <input class="form-control" name="phone" [(ngModel)]="editableBa.phone" #phone="ngModel" required/>
+      <div [hidden]="phone.valid || phone.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Абонемент</label>
+      <select class="form-control" id="exampleFormControlSelect1" name="ticket" [(ngModel)]="editableBa.ticket" #ticket="ngModel" required>
+        <option *ngFor="let ticket of tickets">{{ticket.name}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+    <label>Дата начала тренировок</label>
+    <input class="form-control" name="start" [(ngModel)]="editableBa.start" placeholder="YYYY-MM-DD" #start="ngModel"/>
+    <div [hidden]="start.valid || start.untouched" class="alert alert-danger">
+      Заполните поле
+    </div>
+  </div>
+    <div class="form-group">
+      <label>Статус</label>
+      <select class="form-control" id="exampleFormControlSelect2" name="status" [(ngModel)]="editableBa.status" #status="ngModel">
+        <option>Оплачен</option>
+        <option>Завершен</option>
+      </select>
+      <div [hidden]="status.valid || status.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" (click)="_addPurchase(name, phone, ticket, start, status)"
+            [disabled]="name.invalid || phone.invalid || ticket.invalid">{{editMode ? "Сохранить" : "Добавить"}}
+    </button>
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="_closeModal()">Закрыть</button>
+
+  </div>
+</ng-template>
+

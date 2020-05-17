@@ -1,0 +1,69 @@
+<app-header></app-header>
+<h4>Работа с ответами</h4>
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Вопрос</th>
+    <th scope="col">Ответ</th>
+    <th scope="col">Удалить</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let faq of faqs">
+    <td scope="row">{{faq.idFaq}}</td>
+    <td>{{faq.question}}</td>
+    <td>{{faq.answer}}</td>
+    <td>
+      <button type="button" class="btn btn-danger" (click)="_deleteFaq(faq.idFaq)">Удалить</button>
+    </td>
+  </tr>
+
+  </tbody>
+</table>
+
+<div class="button">
+  <button type="button" class="btn btn-dark" (click)="_updateFaq()">Обновить</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+          (click)="_openModal(template)">
+    Добавить ответ
+  </button>
+  <button type="button" class="btn btn-success" [routerLink]="['/adminMenu4815162342']">В меню</button>
+</div>
+
+<!-- Modal -->
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{editMode ? "Edit" : ""}}  Добавить ответ</h4>
+    <button type="button" class="close pull-right"
+            aria-label="Close" (click)="_closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="form-group">
+      <label>Вопрос</label>
+      <input class="form-control" name="question" [(ngModel)]="editableBa.question" #question="ngModel" required/>
+      <div [hidden]="question.valid || question.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Ответ</label>
+      <input class="form-control" name="answer" [(ngModel)]="editableBa.answer" #answer="ngModel" required/>
+      <div [hidden]="answer.valid || answer.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" (click)="_addFaq(question, answer)"
+            [disabled]="question.invalid || answer.invalid">{{editMode ? "Save" : "Добавить"}}
+    </button>
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="_closeModal()">Закрыть</button>
+
+  </div>
+</ng-template>
+
+

@@ -1,0 +1,63 @@
+<app-header></app-header>
+<main role="main">
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Отзывы </h1>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+            (click)="_openModal(template)">
+      Оставить отзыв
+    </button>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col" width="200">Имя</th>
+      <th scope="col" width="500">Отзыв</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let reviews of reviewsis.reverse()">
+      <td>{{reviews.name}}</td>
+      <td>{{reviews.review}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <ng-template #template>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">{{editMode ? "Edit" : ""}}  Оставить отзыв</h4>
+      <button type="button" class="close pull-right"
+              aria-label="Close" (click)="_closeModal()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>Имя</label>
+        <input class="form-control" name="name" [(ngModel)]="editableBa.name" #name="ngModel" required/>
+        <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
+          Заполните поле
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Отзыв</label>
+        <textarea class="form-control" name="review" [(ngModel)]="editableBa.review" #review="ngModel" required></textarea>
+        <div [hidden]="review.valid || review.untouched" class="alert alert-danger">
+          Заполните поле
+        </div>
+      </div>
+
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" (click)="_addReviews(name, review)"
+              [disabled]="name.invalid || review.invalid">{{editMode ? "Save" : "Добавить"}}
+      </button>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="_closeModal()">Закрыть</button>
+
+    </div>
+  </ng-template>
+</main>
+<app-footer></app-footer>
